@@ -25,6 +25,10 @@ public class ModBlocks {
 
     public static final Block RUBY_ORE = RegisterBlock("ruby_ore",
             new Block(FabricBlockSettings.copyOf(Blocks.RAW_COPPER_BLOCK).sounds(BlockSoundGroup.CHAIN)),
+            new Block(FabricBlockSettings
+                    .copyOf(Blocks.RAW_COPPER_BLOCK)
+                    .sounds(BlockSoundGroup.BASALT)
+            ),
             true);
 
     private static Block RegisterBlock(String name, Block block, Boolean shouldRegisterItem){
