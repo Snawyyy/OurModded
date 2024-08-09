@@ -2,5 +2,8 @@
   "item.ourmodded.ruby": "Ruby",
   "item.ourmodded.raw_ruby": "Raw Ruby",
 
-  "itemgroup.ruby": "Ruby"
+  "block.ourmodded.ruby_block": "Block Of Ruby",
+  "block.ourmodded.ruby_ore_block": "Ruby Ore",
+
+  "itemgroup.ourmodded": "OurModded"
 }

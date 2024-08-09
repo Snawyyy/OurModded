@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "ourmodded:block/ruby_ore"
+  }
+}

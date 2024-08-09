@@ -1,5 +1,6 @@
 package com.modded;
 
+import com.modded.block.ModBlocks;
 import com.modded.item.ModItemGroups;
 import com.modded.item.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -16,6 +17,8 @@ public class OurModded implements ModInitializer {
 	public void onInitialize() {
 
 		ModItemGroups.registerItemGroups();
+
 		ModItems.registerModItems();
+		ModBlocks.RegisterModBlocks();
 	}
 }
