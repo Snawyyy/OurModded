@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "B": {
+      "item": "minecraft:netherrack"
+    },
+    "C": {
+      "item": "minecraft:blaze_rod"
+    },
+    "E": {
+      "item": "ourmodded:ruby"
+    }
+  },
+  "pattern": [
+    "ABA",
+    "BEB",
+    "CCC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "ourmodded:ruby_block"
+  }
+}
