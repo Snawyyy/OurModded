@@ -15,7 +15,11 @@ import net.minecraft.util.Identifier;
 public class ModBlocks {
 
     public static final Block RUBY_BLOCK = RegisterBlock("ruby_block",
-            new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK).luminance(10)),
+            new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)
+                    .sounds(BlockSoundGroup.AMETHYST_BLOCK)
+                    .luminance(1)
+                    .requiresTool()
+            ),
             true);
 
     public static final Block RUBY_ORE = RegisterBlock("ruby_ore",
