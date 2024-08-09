@@ -18,6 +18,9 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)
                     .sounds(BlockSoundGroup.AMETHYST_BLOCK)
                     .luminance(1)
+            new Block(FabricBlockSettings
+                    .copyOf(Blocks.IRON_BLOCK)
+                    .luminance(10)
                     .requiresTool()
             ),
             true);
