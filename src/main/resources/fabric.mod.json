@@ -20,6 +20,9 @@
 		],
 		"client": [
 			"com.modded.OurModdedClient"
+		],
+		"fabric-datagen": [
+			"com.modded.datagen.ModDataGenerator"
 		]
 	},
 	"mixins": [
