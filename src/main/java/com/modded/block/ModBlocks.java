@@ -5,12 +5,14 @@ import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.ExperienceDroppingBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
 
 public class ModBlocks {
 
@@ -19,15 +21,20 @@ public class ModBlocks {
                     .copyOf(Blocks.IRON_BLOCK)
                     .sounds(BlockSoundGroup.AMETHYST_BLOCK)
                     .luminance(10)
+                    .strength(600f) //Explosion proof
+                    .hardness(50f) //Hard as obsidian
                     .requiresTool()
             ),
             true);
 
     public static final Block RUBY_ORE = RegisterBlock("ruby_ore",
-            new Block(FabricBlockSettings
-                    .copyOf(Blocks.RAW_COPPER_BLOCK)
-                    .sounds(BlockSoundGroup.BASALT)
-            ),
+    new ExperienceDroppingBlock(UniformIntProvider.create(2, 5),
+            FabricBlockSettings.copyOf(Blocks.NETHER_QUARTZ_ORE)
+                    .sounds(BlockSoundGroup.AMETHYST_BLOCK)
+                    .strength(600f) //Explosion proof
+                    .hardness(3f)
+                    .requiresTool()
+    ),
             true);
 
     private static Block RegisterBlock(String name, Block block, Boolean shouldRegisterItem){

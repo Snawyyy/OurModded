@@ -2,23 +2,23 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "A": {
-      "item": "minecraft:netherite_ingot"
-    },
     "B": {
-      "item": "minecraft:netherrack"
-    },
-    "C": {
       "item": "minecraft:blaze_rod"
     },
-    "E": {
+    "N": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "P": {
       "item": "ourmodded:ruby"
+    },
+    "R": {
+      "item": "minecraft:netherrack"
     }
   },
   "pattern": [
-    "ABA",
-    "BEB",
-    "CCC"
+    "NRN",
+    "RPR",
+    "BBB"
   ],
   "result": {
     "count": 1,
