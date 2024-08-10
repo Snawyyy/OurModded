@@ -16,14 +16,14 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RUBY_BLOCK);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RUBY_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.NETHER_PEARL_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.NETHER_PEARL_ORE);
     }
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-        itemModelGenerator.register(ModItems.RUBY, Models.GENERATED);
-        itemModelGenerator.register(ModItems.RAW_RUBY, Models.GENERATED);
+        itemModelGenerator.register(ModItems.NETHER_PEARL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNREFINED_NETHER_PEARL, Models.GENERATED);
 
     }
 }

@@ -8,7 +8,6 @@ import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
-import net.minecraft.util.Identifier;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
 
@@ -16,7 +15,7 @@ import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
 public class ModRecipeProvider extends FabricRecipeProvider {
-    private static List<ItemConvertible> RUBY_SMELTABLES = List.of(ModItems.RAW_RUBY);
+    private static List<ItemConvertible> RUBY_SMELTABLES = List.of(ModItems.UNREFINED_NETHER_PEARL);
 
     public ModRecipeProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
         super(output, registriesFuture);
@@ -26,9 +25,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     public void generate(RecipeExporter exporter) {
         //**Smelting**//
         //Nether_Pearl
-        offerSmelting(exporter, RUBY_SMELTABLES, RecipeCategory.MISC, ModItems.RUBY,
+        offerSmelting(exporter, RUBY_SMELTABLES, RecipeCategory.MISC, ModItems.NETHER_PEARL,
                 0.7f, 200, "ruby");
-        offerBlasting(exporter, RUBY_SMELTABLES, RecipeCategory.MISC, ModItems.RUBY,
+        offerBlasting(exporter, RUBY_SMELTABLES, RecipeCategory.MISC, ModItems.NETHER_PEARL,
                 0.7f, 100, "ruby");
 
         //**Compacting**//
@@ -39,15 +38,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         */
 
         //**Shaped**//
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.RUBY_BLOCK, 1)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.NETHER_PEARL_BLOCK, 1)
                 .pattern("NRN")
                 .pattern("RPR")
                 .pattern("BBB")
                 .input('N', Items.NETHERITE_INGOT)
                 .input('R', Items.NETHERRACK)
-                .input('P', ModItems.RUBY)
+                .input('P', ModItems.NETHER_PEARL)
                 .input('B', Items.BLAZE_ROD)
-                .criterion(FabricRecipeProvider.hasItem(ModItems.RUBY), FabricRecipeProvider.conditionsFromItem(ModItems.RUBY)) // What makes it pop into the crafting book
-                .offerTo(exporter, getRecipeName(ModBlocks.RUBY_BLOCK));
+                .criterion(FabricRecipeProvider.hasItem(ModItems.NETHER_PEARL), FabricRecipeProvider.conditionsFromItem(ModItems.NETHER_PEARL)) // What makes it pop into the crafting book
+                .offerTo(exporter, getRecipeName(ModBlocks.NETHER_PEARL_BLOCK));
     }
 }

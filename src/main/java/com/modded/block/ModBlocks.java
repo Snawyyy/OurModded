@@ -2,7 +2,6 @@ package com.modded.block;
 
 import com.modded.OurModded;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.ExperienceDroppingBlock;
@@ -16,7 +15,7 @@ import net.minecraft.util.math.intprovider.UniformIntProvider;
 
 public class ModBlocks {
 
-    public static final Block RUBY_BLOCK = RegisterBlock("ruby_block",
+    public static final Block NETHER_PEARL_BLOCK = RegisterBlock("nether_pearl_block",
             new Block(FabricBlockSettings
                     .copyOf(Blocks.IRON_BLOCK)
                     .sounds(BlockSoundGroup.AMETHYST_BLOCK)
@@ -27,10 +26,10 @@ public class ModBlocks {
             ),
             true);
 
-    public static final Block RUBY_ORE = RegisterBlock("ruby_ore",
+    public static final Block NETHER_PEARL_ORE = RegisterBlock("nether_pearl_ore",
     new ExperienceDroppingBlock(UniformIntProvider.create(2, 5),
             FabricBlockSettings.copyOf(Blocks.NETHER_QUARTZ_ORE)
-                    .sounds(BlockSoundGroup.AMETHYST_BLOCK)
+                    .sounds(BlockSoundGroup.BASALT)
                     .strength(600f) //Explosion proof
                     .hardness(3f)
                     .requiresTool()

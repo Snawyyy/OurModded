@@ -1,9 +1,9 @@
 {
-  "item.ourmodded.ruby": "Ruby",
-  "item.ourmodded.raw_ruby": "Raw Ruby",
+  "item.ourmodded.nether_pearl": "Nether Pearl",
+  "item.ourmodded.unrefined_nether_pearl": "Unrefined Nether Pearl",
 
-  "block.ourmodded.ruby_block": "Block Of Ruby",
-  "block.ourmodded.ruby_ore": "Ruby Ore",
+  "block.ourmodded.nether_pearl_block": "Nether Pearl Block",
+  "block.ourmodded.nether_pearl_ore": "Nether Pearl Ore",
 
   "itemgroup.ourmodded": "OurModded"
 }

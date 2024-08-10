@@ -13,14 +13,14 @@ import net.minecraft.util.Identifier;
 public class ModItemGroups {
     public static final ItemGroup RUBY_GROUP = Registry.register(Registries.ITEM_GROUP, Identifier.of(OurModded.MOD_ID, "ruby"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.ourmodded"))
-                    .icon(() -> new ItemStack(ModItems.RUBY)).entries((displayContext, entries) -> {
+                    .icon(() -> new ItemStack(ModItems.NETHER_PEARL)).entries((displayContext, entries) -> {
                         // Ores
-                        entries.add(ModItems.RUBY);
-                        entries.add(ModItems.RAW_RUBY);
+                        entries.add(ModItems.NETHER_PEARL);
+                        entries.add(ModItems.UNREFINED_NETHER_PEARL);
 
                         // Blocks
-                        entries.add(ModBlocks.RUBY_BLOCK);
-                        entries.add(ModBlocks.RUBY_ORE);
+                        entries.add(ModBlocks.NETHER_PEARL_BLOCK);
+                        entries.add(ModBlocks.NETHER_PEARL_ORE);
 
                     }).build());
     public static void registerItemGroups() {

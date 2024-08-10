@@ -19,8 +19,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         // add the block to what tool is used to mine it
 
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
-                .add(ModBlocks.RUBY_BLOCK)
-                .add(ModBlocks.RUBY_ORE);
+                .add(ModBlocks.NETHER_PEARL_BLOCK)
+                .add(ModBlocks.NETHER_PEARL_ORE);
 
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE);
 
@@ -33,8 +33,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
-                .add(ModBlocks.RUBY_BLOCK)
-                .add(ModBlocks.RUBY_ORE);
+                .add(ModBlocks.NETHER_PEARL_BLOCK)
+                .add(ModBlocks.NETHER_PEARL_ORE);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL);
 

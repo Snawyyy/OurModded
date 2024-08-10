@@ -8,7 +8,6 @@ import net.minecraft.block.Block;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.Item;
-import net.minecraft.item.Items;
 import net.minecraft.loot.LootTable;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.entry.LootPoolEntry;
@@ -28,11 +27,11 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     @Override
     public void generate() {
         // Blocks
-        addDrop((ModBlocks.RUBY_BLOCK));
+        addDrop((ModBlocks.NETHER_PEARL_BLOCK));
 
         //Ores
-        addDrop(ModBlocks.RUBY_ORE,
-                MultipleOreDrops(ModBlocks.RUBY_ORE, ModItems.RAW_RUBY, 1, 3));
+        addDrop(ModBlocks.NETHER_PEARL_ORE,
+                MultipleOreDrops(ModBlocks.NETHER_PEARL_ORE, ModItems.UNREFINED_NETHER_PEARL, 1, 3));
     }
 
     // Drop Functions //

@@ -11,11 +11,11 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
 
-    public static final Item RUBY = registerItem("ruby", new Item(new Item.Settings()));
-    public static final Item RAW_RUBY = registerItem("raw_ruby", new Item(new Item.Settings()));
+    public static final Item NETHER_PEARL = registerItem("nether_pearl", new Item(new Item.Settings()));
+    public static final Item UNREFINED_NETHER_PEARL = registerItem("unrefined_nether_pearl", new Item(new Item.Settings()));
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
-        entries.add(RUBY);
-        entries.add(RAW_RUBY);
+        entries.add(NETHER_PEARL);
+        entries.add(UNREFINED_NETHER_PEARL);
     }
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(OurModded.MOD_ID, name), item);
