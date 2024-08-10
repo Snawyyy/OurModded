@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:blaze_rod"
+    },
+    "N": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "P": {
+      "item": "ourmodded:nether_pearl"
+    },
+    "R": {
+      "item": "minecraft:netherrack"
+    }
+  },
+  "pattern": [
+    "NRN",
+    "RPR",
+    "BBB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "ourmodded:nether_pearl_block"
+  }
+}

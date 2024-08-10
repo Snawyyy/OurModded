@@ -28,6 +28,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     public void generate() {
         // Blocks
         addDrop((ModBlocks.NETHER_PEARL_BLOCK));
+        addDrop((ModBlocks.UNREFINED_NETHER_PEARL_BLOCK));
 
         //Ores
         addDrop(ModBlocks.NETHER_PEARL_ORE,

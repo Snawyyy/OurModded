@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "ourmodded:item/unrefined_nether_pearl"
+  }
+}

@@ -20,7 +20,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.NETHER_PEARL_BLOCK)
-                .add(ModBlocks.NETHER_PEARL_ORE);
+                .add(ModBlocks.NETHER_PEARL_ORE)
+                .add(ModBlocks.UNREFINED_NETHER_PEARL_BLOCK);
 
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE);
 
@@ -34,7 +35,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.NETHER_PEARL_BLOCK)
-                .add(ModBlocks.NETHER_PEARL_ORE);
+                .add(ModBlocks.NETHER_PEARL_ORE)
+                .add(ModBlocks.UNREFINED_NETHER_PEARL_BLOCK);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL);
 

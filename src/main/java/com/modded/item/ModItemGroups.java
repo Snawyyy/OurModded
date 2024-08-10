@@ -11,6 +11,7 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 public class ModItemGroups {
+    // Items here will be added to the mod category in creative
     public static final ItemGroup RUBY_GROUP = Registry.register(Registries.ITEM_GROUP, Identifier.of(OurModded.MOD_ID, "ruby"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.ourmodded"))
                     .icon(() -> new ItemStack(ModItems.NETHER_PEARL)).entries((displayContext, entries) -> {
@@ -21,6 +22,7 @@ public class ModItemGroups {
                         // Blocks
                         entries.add(ModBlocks.NETHER_PEARL_BLOCK);
                         entries.add(ModBlocks.NETHER_PEARL_ORE);
+                        entries.add(ModBlocks.UNREFINED_NETHER_PEARL_BLOCK);
 
                     }).build());
     public static void registerItemGroups() {

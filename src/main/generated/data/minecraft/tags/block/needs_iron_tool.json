@@ -1,6 +1,7 @@
 {
   "values": [
     "ourmodded:nether_pearl_block",
-    "ourmodded:nether_pearl_ore"
+    "ourmodded:nether_pearl_ore",
+    "ourmodded:unrefined_nether_pearl_block"
   ]
 }

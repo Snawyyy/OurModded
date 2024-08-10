@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "ourmodded:block/nether_pearl_block"
+  }
+}

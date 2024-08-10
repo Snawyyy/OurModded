@@ -1,6 +1,7 @@
 package com.modded.block;
 
 import com.modded.OurModded;
+import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -14,6 +15,16 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 
 public class ModBlocks {
+
+    public static final Block UNREFINED_NETHER_PEARL_BLOCK = RegisterBlock("unrefined_nether_pearl_block",
+            new Block(FabricBlockSettings
+                    .copyOf(Blocks.RAW_COPPER_BLOCK)
+                    .sounds(BlockSoundGroup.CHAIN)
+                    .strength(600f)
+                    .hardness(3f)
+                    .requiresTool()
+            ),
+            true);
 
     public static final Block NETHER_PEARL_BLOCK = RegisterBlock("nether_pearl_block",
             new Block(FabricBlockSettings

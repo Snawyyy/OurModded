@@ -1,8 +1,8 @@
-// 1.21	2024-08-10T16:00:35.8677378	OurModded/Tags for minecraft:block
+// 1.21	2024-08-10T16:24:09.3737285	OurModded/Tags for minecraft:block
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data\minecraft\tags\block\needs_diamond_tool.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data\minecraft\tags\block\needs_stone_tool.json
+8b558b01c9d206dafed769d3f1abdacb001908e5 data\minecraft\tags\block\mineable\pickaxe.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data\minecraft\tags\block\mineable\axe.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data\minecraft\tags\block\mineable\hoe.json
-35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data\minecraft\tags\block\needs_diamond_tool.json
-d91fe00bdb2d1ac6126119e8708ad7c65f59ec40 data\minecraft\tags\block\needs_iron_tool.json
-d91fe00bdb2d1ac6126119e8708ad7c65f59ec40 data\minecraft\tags\block\mineable\pickaxe.json
+8b558b01c9d206dafed769d3f1abdacb001908e5 data\minecraft\tags\block\needs_iron_tool.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data\minecraft\tags\block\mineable\shovel.json
-35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data\minecraft\tags\block\needs_stone_tool.json

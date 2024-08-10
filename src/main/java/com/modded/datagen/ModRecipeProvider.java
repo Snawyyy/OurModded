@@ -23,19 +23,20 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
     @Override
     public void generate(RecipeExporter exporter) {
+
         //**Smelting**//
-        //Nether_Pearl
+        // Nether Pearl
         offerSmelting(exporter, RUBY_SMELTABLES, RecipeCategory.MISC, ModItems.NETHER_PEARL,
                 0.7f, 200, "ruby");
         offerBlasting(exporter, RUBY_SMELTABLES, RecipeCategory.MISC, ModItems.NETHER_PEARL,
                 0.7f, 100, "ruby");
 
+
         //**Compacting**//
-        /*
-        exemple:
-        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.RAW_RUBY, RecipeCategory.DECORATIONS,
-                ModBlocks.RAW_RUBY_BLOCK);
-        */
+        // Unrefined Nether Pearl Block
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.UNREFINED_NETHER_PEARL, RecipeCategory.DECORATIONS,
+                ModBlocks.UNREFINED_NETHER_PEARL_BLOCK);
+
 
         //**Shaped**//
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.NETHER_PEARL_BLOCK, 1)

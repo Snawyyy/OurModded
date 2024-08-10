@@ -4,6 +4,7 @@
 
   "block.ourmodded.nether_pearl_block": "Nether Pearl Block",
   "block.ourmodded.nether_pearl_ore": "Nether Pearl Ore",
+  "block.ourmodded.unrefined_nether_pearl_block": "Unrefined Nether Pearl Block",
 
   "itemgroup.ourmodded": "OurModded"
 }

@@ -18,6 +18,7 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.NETHER_PEARL_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.NETHER_PEARL_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.UNREFINED_NETHER_PEARL_BLOCK);
     }
 
     @Override
