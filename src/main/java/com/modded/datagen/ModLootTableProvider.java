@@ -29,6 +29,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         // Blocks
         addDrop((ModBlocks.NETHER_PEARL_BLOCK));
         addDrop((ModBlocks.UNREFINED_NETHER_PEARL_BLOCK));
+        //AddAllWoodBlockTypesDrops("unrefined_nether_pearl_block");
 
         //Ores
         addDrop(ModBlocks.NETHER_PEARL_ORE,
@@ -45,4 +46,18 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
                                         .create(min, max))) // Amount of drops
                         .apply(ApplyBonusLootFunction.uniformBonusCount(impl.getOrThrow(Enchantments.FORTUNE)))));
     }
+
+    public void AddAllWoodBlockTypesDrops(String materialName) {
+        // Retrieve each block by name and add it as a drop
+        addDrop(ModBlocks.getBlockByName(materialName + "_stairs"));
+        addDrop(ModBlocks.getBlockByName(materialName + "_button"));
+        addDrop(ModBlocks.getBlockByName(materialName + "_pressure_plate"));
+        addDrop(ModBlocks.getBlockByName(materialName + "_fence"));
+        addDrop(ModBlocks.getBlockByName(materialName + "_fence_gate"));
+        addDrop(ModBlocks.getBlockByName(materialName + "_trapdoor"));
+
+        addDrop(ModBlocks.getBlockByName(materialName + "_slab"), slabDrops(ModBlocks.getBlockByName(materialName + "_slab")));
+        addDrop(ModBlocks.getBlockByName(materialName + "_door"), doorDrops(ModBlocks.getBlockByName(materialName + "_door")));
+    }
+
 }

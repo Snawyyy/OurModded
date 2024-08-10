@@ -24,4 +24,9 @@ public class ModItems {
         OurModded.LOGGER.info("Registering mod items for " + OurModded.MOD_ID);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToIngredientItemGroup);
     }
+
+    public static Item getItemByName(String itemName) {
+        Identifier itemId = Identifier.of(OurModded.MOD_ID, itemName);
+        return Registries.ITEM.get(itemId);
+    }
 }
